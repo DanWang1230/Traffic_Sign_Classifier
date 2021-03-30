@@ -48,12 +48,12 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 As a last step, I normalized the image data so the data has mean zero and equal variance and the position of the image doesn't matter.
 
-To increase the accuracy of the validation set, I decided to change the arichitecture of the LeNet network from the lecture.
+To increase the accuracy of the validation set, I decided to change the architecture of the LeNet network from the lecture.
 
 
 #### 2. Model architecture
 
-A LeNet-5 architecture is chosen for this task. Using the original LeNet-5, I achieved a high accuracy on the training set but low accuracy on the validation set (around 0.89). To solve for the overfitting problem, I added dropout layers after the fully connected layers. 
+A LeNet-5 architecture is chosen for this task. Using the original LeNet-5, I achieved high accuracy on the training set but low accuracy on the validation set (around 0.89). To solve the overfitting problem, I added dropout layers after the fully connected layers. 
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -86,7 +86,7 @@ To train the model, I used the Adam optimizer, the batch size of 128, 50 epochs,
 * validation set accuracy of 0.967 
 * test set accuracy of 0.947
 
-### Test a Model on New Images
+### Test the Model on New Images
 
 #### 1. Choose five German traffic signs found on the web
 
@@ -95,7 +95,7 @@ Here are five German traffic signs that I found on the web after resizing and gr
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-They all are under well lighting condition and pretty clear and should not be difficult to classify.
+They all are under well lighting conditions and pretty clear and should not be difficult to classify.
 
 #### 2. Model's predictions on new traffic signs
 Here are the results of the prediction:
@@ -115,6 +115,6 @@ The model was able to correctly guess all the five traffic signs, which gives an
 
 The code for making predictions on my final model is located in the 19th cell of the notebook.
 
-For the first image, the model is 100% sure that this is a traffic signal(probability of 1), and the image indeed is a traffic signal. And the other four softmax probabilities are close to 0. This is also the case for the other four new images I obtained from web.
+For the first image, the model is 100% sure that this is a traffic signal(probability of 1), and the image indeed is a traffic signal. And the other four softmax probabilities are close to 0. It is also the case for the other four new images I obtained from the web.
 
 

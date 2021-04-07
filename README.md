@@ -1,7 +1,7 @@
 # **Traffic Sign Recognition** 
 
 The goals/steps of this project are the following:
-* Load the data set of traffic signs
+* Load the data set of German traffic signs
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -22,6 +22,24 @@ The project is from the self-driving car nanodegree in Udacity. So are datasets.
 
 
 ---
+### Libraries
+`pickle`
+`csv`
+`matplotlib`
+`random`
+`numpy`
+`cv2`
+`sklearn`
+`tensorflow`
+`os`
+
+---
+### Files in this repo
+
+`signnames.csv` useful as it contains mappings from the class id (integer) to the actual sign name
+
+---
+
 ### Data Set Summary & Exploration
 
 #### 1. Basic summary of the data set
@@ -38,6 +56,8 @@ The project is from the self-driving car nanodegree in Udacity. So are datasets.
 This is a bar chart showing how the data is distributed: blue for the training data set and yellow for the validation.
 
 ![alt text][image3]
+
+---
 
 ### Design and Test a Model Architecture
 
@@ -89,6 +109,8 @@ To train the model, I used the Adam optimizer, the batch size of 128, 50 epochs,
 * validation set accuracy of 0.967 
 * test set accuracy of 0.947
 
+---
+
 ### Test the Model on New Images
 
 #### 1. Choose five German traffic signs found from the web
@@ -116,9 +138,11 @@ The model was able to correctly guess all the five traffic signs, which gives an
 
 #### 3. Determine how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction.
 
-The code for making predictions on my final model is located in the 19th cell of the notebook.
+The code for making predictions on my final model is located in the last two cells of the notebook.
 
 For the first image, the model is 100% sure that this is a traffic signal(probability of 1), and the image indeed is a traffic signal. And the other four softmax probabilities are close to 0. It is also the case for the other four new images I obtained from the web.
+
+---
 
 ### Discussion
 

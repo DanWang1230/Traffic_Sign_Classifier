@@ -23,15 +23,7 @@ The project is from the self-driving car nanodegree in Udacity. So are datasets.
 
 ---
 ### Libraries
-`pickle`
-`csv`
-`matplotlib`
-`random`
-`numpy`
-`cv2`
-`sklearn`
-`tensorflow`
-`os`
+`pickle`, `csv`, `matplotlib`,`random`, `numpy`, `cv2`, `sklearn`, `tensorflow`, `os`
 
 ---
 ### Files in this repo

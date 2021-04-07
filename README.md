@@ -28,7 +28,17 @@ The project is from the self-driving car nanodegree in Udacity. So are datasets.
 ---
 ### Files in this repo
 
-`signnames.csv` useful as it contains mappings from the class id (integer) to the actual sign name
+`results`: folder, stores images for the README file
+
+`data`: folder, stores the train, validation, and test datasets
+
+`new_images`: folder, stores five new images found from web
+
+`LICENSE`: license file
+
+`checkpoint`, `lenet.data-00000-of-00001`, `lenet.index`, and `lenet.meta`: lenet model checkpoints
+
+`signnames.csv`: mappings from the class id (integer) to the actual sign name
 
 ---
 
